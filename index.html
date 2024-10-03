@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Ricardo Rivas - Home Page">
+    <meta name="author" content="Ricardo Rivas">
+    
+    <meta property="og:title" content="Ricardo Rivas">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rrivas2.github.io/wdd231/images/ric.jpg">
+    <meta property="og:url" content="https://rrivas2.github.io/wdd231/">
+
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <title>WDD 231 - Ricardo Rivas</title>
+
+    <script src="scripts/home.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="top">
+            <img id="me" src="images/ric.jpg" alt="Ricardo Rivas" width="20%" height="20%">
+            <h1>Ricardo Rivas</h1>
+            <button id="menu"></button>
+        </section>
+        <nav>
+            <a href="index.html" title="Home">Home</a>
+            <a href="chamber.html" title="Chamber">Chamber</a>
+            <a href="https://github.com/RRIVAS2" title="Github">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/ricardo-rivas90/" title="LinkedIn">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="upper">
+            <section class="card" id="course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>
+                        placeholder
+                    </li>
+                    <li>
+                        placeholder
+                    </li>
+                    <li>
+                        placeholder
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card" id="place">
+                <h2>San Jose, Costa Rica</h2>
+                <img class="flag" src="images/beach.webp" alt="Costa Rica flag">
+            </section>
+        </div>
+
+        <section class="card" id="certificates">
+            <h2>Web and Computer Programming Certificates</h2>
+
+            <section class="filters-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </section>
+            <hr>
+            <section id="courses-section">
+            </section>
+        </section>
+
+        <p>Total Required Credits: <span id="credits"></span></p>
+
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> Ricardo Rivas</p>
+        <p id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <img class="flag" src="images/flag.png" alt="Costa Rica flag" width="30" height="20">
+    </footer>
+</body>
+</html>

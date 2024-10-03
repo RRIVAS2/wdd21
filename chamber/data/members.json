@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Amazon.com, Inc.",
+        "address": "410 Terry Avenue North, Seattle, WA",
+        "phone": "206-266-1000",
+        "website": "https://www.amazon.com",
+        "icon": "amazon.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Global e-commerce and cloud computing leader"
+    },
+    {
+        "name": "Samsung Electronics Co., Ltd.",
+        "address": "129 Samsung-Ro, Suwon-Si, Gyeonggi-Do, South Korea",
+        "phone": "82-2-2255-0114",
+        "website": "https://www.samsung.com",
+        "icon": "samsung.png",
+        "membershipLevel": 2,
+        "additionalInfo": "Leading manufacturer of electronics and semiconductors"
+    },
+    {
+        "name": "Intel Corporation",
+        "address": "2200 Mission College Blvd, Santa Clara, CA",
+        "phone": "408-765-8080",
+        "website": "https://www.intel.com",
+        "icon": "intel.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Pioneer in semiconductor and computer hardware technologies"
+    },
+    {
+        "name": "Sony Corporation",
+        "address": "1-7-1 Konan, Minato-ku, Tokyo, Japan",
+        "phone": "81-3-6748-2111",
+        "website": "https://www.sony.com",
+        "icon": "sony.png",
+        "membershipLevel": 2,
+        "additionalInfo": "Innovator in consumer electronics, gaming, and entertainment"
+    },
+    {
+        "name": "IBM Corporation",
+        "address": "1 New Orchard Road, Armonk, NY",
+        "phone": "914-499-1900",
+        "website": "https://www.ibm.com",
+        "icon": "ibm.png",
+        "membershipLevel": 3,
+        "additionalInfo": "Global leader in IT services and enterprise solutions"
+    },
+    {
+        "name": "Tesla, Inc.",
+        "address": "3500 Deer Creek Road, Palo Alto, CA",
+        "phone": "650-681-5000",
+        "website": "https://www.tesla.com",
+        "icon": "tesla.png",
+        "membershipLevel": 2,
+        "additionalInfo": "Electric vehicles and renewable energy solutions"
+    },
+    {
+        "name": "Airbnb, Inc.",
+        "address": "888 Brannan Street, San Francisco, CA",
+        "phone": "415-800-5959",
+        "website": "https://www.airbnb.com",
+        "icon": "airbnb.png",
+        "membershipLevel": 1,
+        "additionalInfo": "Online marketplace for short-term lodging and experiences"
+    }
+]

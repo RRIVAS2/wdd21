@@ -1,0 +1,154 @@
+
+:root {
+  --primary-color: #08605F;
+  --secondary-color: #bbc4c7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F8F9FA; /* Light Gray */
+  color: #333333; /* Dark Gray for text */
+  margin: 0;
+  padding: 0;
+}
+
+header #top {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: auto;
+  height: 90px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: none;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+nav a:hover {
+border: 3px solid #2BD9FE;
+color: #2BD9FE;
+font-weight: 700;
+}
+
+header button#menu {
+font-size: 2rem;
+border: 0;
+background: none;
+color: #FFFFFF;
+position: absolute;
+top: 1rem;
+right: 3rem;
+}
+
+#menu::before {
+content: "☰";
+}
+
+#menu.open::before {
+content: "❎";
+}
+
+.open a {
+  display: flex;
+  text-align: center;
+}
+
+nav.open {
+  width: 100%;
+}
+  
+
+  
+h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: var(--primary-color); /* Dark Navy Blue */
+    color: #FFFFFF; /* White */
+    font-size: 0.75rem;
+  }
+  
+
+
+
+  
+  
+
+
+  @media screen and (min-width:800px) {
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      display: flex;
+    }
+  
+    header button#menu {
+      display: none; 
+    }
+  
+    nav {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    nav a {
+      display: flex;
+      font-size: 1.5rem;
+      
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1rem;
+    }
+  }
