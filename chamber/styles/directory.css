@@ -13,8 +13,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #F8F9FA; /* Light Gray */
-  color: #333333; /* Dark Gray for text */
+  background-color: #F8F9FA; 
+  color: #333333; 
   margin: 0;
   padding: 0;
 }
@@ -96,16 +96,119 @@ h2 {
   padding-top: 2rem;
 }
 
+#view {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  padding: 20px;
+}
+
+#view button {
+  margin: 0 10px;         
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#view button:hover {
+  background-color: #0056b3;
+}
+
+
+#members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  padding: 30px;
+}
+
+.grid-view .member-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.grid-view .member-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.grid-view .member-card p {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.grid-view .member-icon {
+  width: 208px;
+  height: 150px;
+  object-fit: contain;
+}
+
+#visit-website {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  
+}
+
+#visit-website:hover {
+  background-color: #0056b3;
+}
 
 
 
+.list-view .member-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: auto; 
+}
+
+.list-view .member-card img {
+  margin-right: 20px; 
+}
+
+.list-view p{
+  margin-left: 20px; 
+}
+
+
+.list-view .member-icon {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+
+}
 
   footer {
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0;
-    background-color: var(--primary-color); /* Dark Navy Blue */
-    color: #FFFFFF; /* White */
+    background-color: var(--primary-color); 
+    color: #FFFFFF; 
     font-size: 0.75rem;
   }
   
@@ -142,8 +245,15 @@ h2 {
     }
 
     #menu {
-        display: none; /* hide hamburger button */
+        display: none; 
     }
+
+
+  #members-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
 
     footer {
@@ -151,4 +261,6 @@ h2 {
       justify-content: space-evenly;
       font-size: 1rem;
     }
+
+
   }
