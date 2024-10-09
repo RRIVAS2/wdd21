@@ -349,32 +349,6 @@ footer {
 
 
 
-    .callToAction {
-        display: grid;
-        position: absolute;
-        top: 35%;
-        left: 86%;
-        z-index: 2;
-        background-color: var(--text-sec-color);
-        opacity: 0.9;
-        margin: 0 auto;
-        width: 20%;
-        height: 380px;
-        align-items: center;
-    } 
-
-    .callToAction h2 {
-        font-size: 25px;
-        font-weight: 300;
-    }
-
-    .joinUs {
-        font-size: 20px;
-        width: 80%;
-        height: 40px;
-        border: none;
-        cursor: pointer;
-    }
 
     .joinUs:hover {
         background-color: var(--accent-color);
@@ -392,7 +366,7 @@ footer {
 
     #upper {
         display: flex;
-        flex-wrap: row; /* Allow the items to wrap on smaller screens */
+        flex-direction: row; /* Allow the items to wrap on smaller screens */
         justify-content: space-between; /* Add space between the cards */
     }
 
