@@ -1,0 +1,417 @@
+:root {
+    --primary-color: #29475b;
+    --secondary-color: #bbc4c7;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header #top {
+    background-color: var(--primary-color);
+   /* align-items: center;
+    justify-content: center; */
+    padding: 20px;
+    display: flex;
+
+}
+
+header img {
+    width: auto;
+    height: 120px;
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    text-align: right;
+
+}
+
+
+header button#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #FFFFFF;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    }
+    
+    #menu::before {
+    content: "☰";
+    }
+    
+    #menu.open::before {
+    content: "❎";
+    }
+    
+    .open a {
+      display: flex;
+      text-align: center;
+    }
+    
+    nav.open {
+      width: 100%;
+    }
+
+
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    }
+      
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: none;
+    font-size: 1rem;
+    justify-content: center;
+    }
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+.hero-image {
+    position: relative;
+    height: 80vh; /* Adjust as needed */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the area */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken the image */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2; 
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 1.0rem;
+    padding: 20px;
+}
+
+
+.hero-text button {
+    background-color: #12c933f9; 
+    color: white;
+    font-size: 1.5rem; 
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.hero-text button:hover {
+    background-color: #5ce600; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-text button:focus {
+    outline: none; 
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.6); 
+}
+
+.hero-text button:active {
+    transform: scale(0.98); 
+}
+
+
+
+main {
+    flex-direction: column; 
+}
+
+main .card {
+    flex: 1 1 100%; /* Cards take up the full width */
+    border: 1px solid #415541;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    margin: 25px;
+    max-width: 100%; /* Ensure the card doesn't grow beyond its container */
+    overflow: hidden; /* Prevent any content from overflowing */
+
+}
+
+
+.card h2 {
+    border: 1px;
+    background-color: #29475b;
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 0.75rem 0;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+
+.card ul {
+    color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 1rem;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#forecast .forecast-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    justify-items: center;
+}
+
+.day-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.forecast-icon {
+    width: 100px; /* Adjust icon size */
+    height: 100px;
+}
+
+#forecast figcaption {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+
+#weather figcaption,
+#forecast figcaption {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+#weather-icon {
+    width: 150px; /* Adjust the width as per your preference */
+    height: 150px;
+}
+
+
+#weather-temp {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#members-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+  }
+  
+  .grid-view .member-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  
+  .grid-view .member-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .grid-view .member-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .grid-view .member-icon {
+    width: 208px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: var(--primary-color); 
+    color: #FFFFFF; 
+    font-size: 0.75rem;
+  }
+
+/*
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user 
+}*/
+
+
+
+
+
+@media (min-width: 720px) {
+
+    h1 {
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+
+    nav {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    nav a {
+      display: flex;
+      font-size: 1.5rem;
+      
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+
+
+    .callToAction {
+        display: grid;
+        position: absolute;
+        top: 35%;
+        left: 86%;
+        z-index: 2;
+        background-color: var(--text-sec-color);
+        opacity: 0.9;
+        margin: 0 auto;
+        width: 20%;
+        height: 380px;
+        align-items: center;
+    } 
+
+    .callToAction h2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .joinUs {
+        font-size: 20px;
+        width: 80%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .joinUs:hover {
+        background-color: var(--accent-color);
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    #upper {
+        display: flex;
+        flex-wrap: row; /* Allow the items to wrap on smaller screens */
+        justify-content: space-between; /* Add space between the cards */
+    }
+
+        /* Style for individual cards */
+    .card {
+        border: 1px solid #415541;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+        margin: 25px;
+        max-width: 100%; /* Ensure the card doesn't grow beyond its container */
+        overflow: hidden;
+        flex: 1 1 calc(33.333% - 50px); /* Each card takes up 1/3rd of the row, minus the margins */
+        box-sizing: border-box;
+    }
+
+    .card h2 {
+        background-color: #29475b;
+        font-size: 2rem;
+        padding: 0.75rem 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+      }
+}
+
+
