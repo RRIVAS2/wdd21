@@ -6,6 +6,7 @@ function displayFormData() {
     const mobileNumber = localStorage.getItem('mobileNumber');
     const organizationName = localStorage.getItem('organizationName');
     const membershipLevel = localStorage.getItem('membershipLevel');
+    const timestamp = localStorage.getItem('timestamp');
 
     // Log the retrieved values
     console.log('Retrieved Data:', {
@@ -14,7 +15,8 @@ function displayFormData() {
         emailAddress,
         mobileNumber,
         organizationName,
-        membershipLevel
+        membershipLevel,
+        timestamp
     });
 
     // Display the data on the thankyou.html page if available
@@ -25,6 +27,7 @@ function displayFormData() {
         document.getElementById('display-mobile').textContent = mobileNumber;
         document.getElementById('display-organization').textContent = organizationName;
         document.getElementById('display-membership').textContent = membershipLevel;
+        document.getElementById('display-timestamp').textContent = timestamp;
     } else {
         console.log('Some or all data is missing from localStorage');
     }

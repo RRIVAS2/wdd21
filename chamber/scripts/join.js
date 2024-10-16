@@ -33,10 +33,13 @@ function saveFormData(event) {
     // Get the user's input values from required fields
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
-    const emailAddress = document.getElementById('emailaddress').value;
+    const emailAddress = document.getElementById('emailAddress').value;
     const mobileNumber = document.getElementById('mobileNumber').value;
     const organizationName = document.getElementById('organizationName').value;
     const membershipLevel = document.getElementById('membershipLevel').value;
+
+    const now = new Date();
+    const timestamp = now.toISOString();
 
     console.log("First Name:", firstName);
     console.log("Last Name:", lastName);
@@ -44,6 +47,7 @@ function saveFormData(event) {
     console.log("Mobile Number:", mobileNumber);
     console.log("Organization Name:", organizationName);
     console.log("Membership Level:", membershipLevel);
+    console.log("Timestamp:", timestamp);
 
     // Store the required fields in localStorage
     localStorage.setItem('firstName', firstName);
@@ -52,6 +56,7 @@ function saveFormData(event) {
     localStorage.setItem('mobileNumber', mobileNumber);
     localStorage.setItem('organizationName', organizationName);
     localStorage.setItem('membershipLevel', membershipLevel);
+    localStorage.setItem('timestamp', timestamp);
 
     // Wait for the data to be stored, then redirect to the thank you page
     setTimeout(() => {
