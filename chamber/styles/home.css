@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #08605F;
+    --primary-color: #29475b;
     --secondary-color: #bbc4c7;
   }
 
@@ -191,7 +191,7 @@ main .card {
 
 .card h2 {
     border: 1px;
-    background-color: #29475b;
+    background-color: var(--primary-color);
     font-size: 2rem;
     border: 1px solid black;
     padding: 0.75rem 0;
