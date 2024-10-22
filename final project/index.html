@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Talent Hub</title>
+    <meta name="author" content="Ricardo Rivas">
+    <meta name="description" content="CR Talent Hub is a job search platform that allows you to search for jobs and apply for them.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+
+    <meta property="og:title" content="CR Talent Hub">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rrivas2.github.io/wdd231/chamber/images/puravida.jpg">
+    <meta property="og:url" content="https://rrivas2.github.io/wdd231/finalproject/index.html">
+
+</head>
+<body>
+    <header>
+        <section id="top">
+            <img id="me" src="images/puravida.jpg" alt="Pura Vida!" >
+            <h1>CR Talent Hub</h1>
+            <button id="menu"></button>
+        </section>
+        <nav class="navigation">
+            <a href="index.html" id="home" class="active">Home</a>
+            <a href="directory.html" id="directory">Job Search</a>
+            <a href="join.html" id="join">Join</a>
+        </nav>
+    </header>
+
+    
+        <picture class="main-image">
+            <source srcset="images/home-large.webp" media="(min-width: 800px)" loading="lazy" width= 100% height=100%>
+            <img src="images/home-small.webp" alt="happy employees" loading="lazy" width= 100% height=auto>
+        </picture>
+    <div class="container">
+        <h2>Find Your Dream Job</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter job title or company">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="results"></div>
+    </div>
+</body>
+
+
+<footer>
+    <div>
+        <p><strong>CR Talent Hub</strong></p>
+        <p>San Jose, Costa Rica</p>
+        <p>info@crtalenthub.org</p>
+
+    </div>
+
+    <div>
+        <p>WDD231 - Final Project</p>
+        <p>Ricardo Rivas</p>
+        <p>©<span id="currentYear"></span> Costa Rica Chamber of Commerce</p>
+        <p id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+    </div>
+</footer>
+</html>
