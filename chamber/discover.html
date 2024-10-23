@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Costa Rica Chamber of Commerce</title>
+        <meta name="description" content="WDD 231 - Ricardo Rivas - Chamber">
+        <meta name="author" content="Ricardo Rivas">
+    
+        <meta property="og:title" content="CR Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://rrivas2.github.io/wdd231/chamber/images/puravida.jpg">
+        <meta property="og:url" content="https://rrivas2.github.io/wdd231/chamber/index.html">
+    
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="scripts/home.js" defer></script>
+        <script src="scripts/discover.js" defer></script>
+        <script src="scripts/footer.js" defer></script>
+        <link rel="icon" href="favicon.ico">
+    </head>
+<body>
+    <header>
+        <section id="top">
+            <img id="me" src="images/puravida.jpg" alt="Pura Vida!" >
+            <h1>Costa Rica Chamber of Commerce</h1>
+            <button id="menu"></button>
+        </section>
+        <nav class="navigation">
+            <a href="index.html" id="home">Home</a>
+            <a href="directory.html" id="directory">Directory</a>
+            <a href="join.html" id="join">Join</a>
+            <a href="discover.html" id="discover">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="discover-grid">
+            <div id="sidebar-container">
+                <div class="card">
+                    <h2>Costa Rica</h2>
+                    <ul>
+                        <li>Language: Spanish</li>
+                        <li>Independece: September, 15th 1821</li>
+                        <li>Area: 51,179.92 km2</li>
+                        <li>Population: 2022 Census - 5,044,197</li>
+                        <li>Capital: San Jose</li>
+                        <li>Calling Code: +506</li>
+                        <li>Time Zone: UTC-6 (CST)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Finance Data</h2>
+                    <ul>
+                        <li>Currency: Colon - CRC</li>
+                        <li>GDP per capita: $16,213</li>
+                        <li>Gini: 47.2 - High Inequality</li>
+                        <li>HDI: 0.806 - Very High</li>
+                        <li>Capita;: San Jose</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="image-container">
+                <img src="images/volcano.webp" alt="Arenal volcano" loading="lazy" width="300" height="500">
+                <img src="images/beach2.webp" alt="Beach in Guanacaste" loading="lazy" width="300" height="500">
+                <img src="images/monkey.webp" alt="A white faced monkey" loading="lazy" width="300" height="500">
+                <img src="images/city.webp" alt="San Jose aerial image" loading="lazy" width="300" height="500">
+                <img src="images/trails.webp" alt="Trails in the forest" loading="lazy" width="300" height="500">
+                <img src="images/adventure.webp" alt="" loading="Hanging Bridges" width="300" height="500">
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <div>
+            <p><strong>Costa Rica Chamber of Commerce</strong></p>
+            <p>Curridabat, Calle 50</p>
+            <p>San Jose</p>
+            <p>info@crchamber.org</p>
+            <p>(506)2250-2250</p>
+        </div>
+
+        <div>
+            <p>WDD231 - Class Project</p>
+            <p>Ricardo Rivas</p>
+            <p>©<span id="currentYear"></span> Costa Rica Chamber of Commerce</p>
+            <p id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        </div>
+    </footer>
+</body>
+</html>
