@@ -181,7 +181,7 @@ main .card {
     margin: 25px;
     max-width: 100%; /* Ensure the card doesn't grow beyond its container */
     overflow: hidden; /* Prevent any content from overflowing */
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 
