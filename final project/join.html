@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Talent Hub</title>
+    <meta name="author" content="Ricardo Rivas">
+    <meta name="description" content="CR Talent Hub is a job search platform that allows you to search for jobs and apply for them.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <meta property="og:title" content="CR Talent Hub">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rrivas2.github.io/wdd231/chamber/images/puravida.jpg">
+    <meta property="og:url" content="https://rrivas2.github.io/wdd231/finalproject/index.html">
+
+</head>
+<body>
+    <header>
+        <section id="top">
+            <img id="me" src="images/puravida.jpg" alt="Pura Vida!" >
+            <h1>CR Talent Hub</h1>
+            <button id="menu"></button>
+        </section>
+        <nav class="navigation">
+            <a href="index.html" id="home" class="active">Home</a>
+            <a href="search.html" id="search">Job Search</a>
+            <a href="join.html" id="join">Join</a>
+        </nav>
+    </header>
+
+    <main id="join-main">
+        <form method="get" action="thanks.html" class="wf1" onsubmit="saveFormData(event)">
+            <label for="firstName">First Name:</label>
+            <input name="firstName" id="firstName" type="text" autocomplete="given-name" title="Enter your first name" required/>
+
+            <label for="lastName">Last Name:</label>
+            <input name="lastName" id="lastName" type="text" autocomplete="family-name" title="Enter your last name" required/>
+
+            <label for="emailAddress">Email:</label>
+            <input name="emailAddress" id="emailAddress" type="email" autocomplete="email" placeholder="example@domain.com" title="Enter a valid email" required/>
+
+            <label for="tier">Tier:</label>
+            <select name="tier" id="tier" required>
+                <option value="" disabled selected>Select your membership level</option>
+                <option value="free">Free Tier</option>
+                <option value="premium">Premium Member</option>
+            </select>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" id="joinbutton" value="Join!">
+        </form>
+
+
+
+
+
+        <div id="tier-container">
+            <div class="tier-card" id="free-card">
+                <h3>Free Tier</h3>
+                <p>For people searching for jobs</p>
+                <ul>
+                    <li>✔ Free Job Search</li>
+                    <li>✔ Apply to jobs for free</li>
+                </ul>          
+            </div>
+            <div class="tier-card" id="premium-card">
+                <h3>Premium Membership $25 USD Monthly Fee</h3>
+                <p>For people looking to advance their careers</p>
+                <ul>
+                    <li>✔ 5 Free Resume Reviews per month</li>
+                    <li>✔ Career resources</li>
+                    <li>✔ Resume and Cover Letter Templates</li>
+                    <li>✔ Access to Webinars with HR Professionals</li>
+                </ul>
+            </div>            
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div>
+            <p><strong>CR Talent Hub</strong></p>
+            <p>San Jose, Costa Rica</p>
+            <p>info@crtalenthub.org</p>
+    
+        </div>
+    
+        <div>
+            <p>WDD231 - Final Project</p>
+            <p>Ricardo Rivas</p>
+            <p>©<span id="currentYear"></span> Costa Rica Chamber of Commerce</p>
+            <p id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        </div>
+    </footer>
+</html>

@@ -75,7 +75,7 @@ header #top {
   }
   
   #menu {
-    display: none; /* Hide the menu button for now */
+    display: none; /* Hide the menu button for larger screen */
 }
 
 
@@ -125,6 +125,7 @@ h2 {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
 .job-card h2 {
@@ -155,3 +156,224 @@ footer {
     color: #FFFFFF; 
     font-size: 0.75rem;
   }
+
+
+
+#join-main {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr 1fr; /
+  gap: 20px; 
+  align-items: start; /* Align items to the start */
+}
+
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.992);
+  border-radius: 4px;
+  max-width: 100%;
+  grid-column: 1/2;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Input, select, and submit button styling */
+input[type="text"],
+input[type="email"],
+select {
+    width: 75%;
+    padding: 7px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #1aa433f9;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 50%;
+  margin-top: 55px;
+}
+
+/* Hover effects */
+form.wf1 input[type="submit"]:hover {
+  background-color: #3b8709;
+}
+
+/* Placeholder styling */
+form.wf1 ::placeholder {
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+
+/* Tooltip styling */
+form.wf1 input[title],
+form.wf1 textarea[title] {
+  position: relative;
+}
+
+form.wf1 input[title]:hover::after,
+form.wf1 textarea[title]:hover::after {
+content: attr(title);
+position: absolute;
+left: 0;
+top: 100%;
+background: #333;
+color: #fff;
+padding: 5px;
+border-radius: 4px;
+font-size: 12px;
+white-space: nowrap;
+z-index: 10000;
+}
+
+
+#tier-container {
+display: flex;
+flex-direction: row;
+max-width: 80%;
+margin: 10px; 
+grid-column: 2/4;
+padding-left: 30px;
+}
+
+.tier-card {
+margin-bottom: 30px;
+flex: 1;
+background-color:  rgba(211, 211, 211, 0.992);
+padding: 15px;
+display: flex;
+flex-direction: column;
+max-width: 75%;
+margin: 12px;
+border-radius: 8px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+transition:  transform 0.5s ease-out;
+}
+
+/* Animation on hover */
+.tier-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tier-card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  }
+  
+
+#submitted-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.992);
+  border-radius: 4px;
+  max-width: none;
+  width: 60%;
+  justify-self: center;
+}
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+
+  nav a.active {
+    font-weight: bold;
+    background-color: rgba(35, 229, 13, 0.469);
+  }
+  
+  nav a.active::after {
+    content: '';
+    height: 0px;
+  }
+
+  #menu {
+    display: flex; 
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #FFFFFF;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+
+  #menu::before {
+    content: "☰";
+    }
+
+  #menu.open::before {
+    content: "❎";
+    }
+
+  .open a {
+    display: flex;
+    text-align: center;
+  }
+
+  nav {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    }
+  
+  nav a {
+    justify-content: center;
+    display: none;
+  }
+
+  nav.open {
+    width: 100%;
+  }
+
+
+  form {
+    width: 80%;
+    max-width: none;
+  }
+
+  #join-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #tier-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 10px; 
+    }
+
+
+
+
+
+}

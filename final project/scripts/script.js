@@ -9,8 +9,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
     
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
+        // Update the condition to check if the link's href matches the current page
+        if (link.getAttribute('href') === currentPage || (currentPage === '' && link.getAttribute('href') === 'index.html')) {
             link.classList.add('active');
+        } else {
+            link.classList.remove('active'); // Remove active class from other links
         }
     });
 });
+
+
+
+  // menu button for small screen
+  const hamButton = document.querySelector('#menu');
+  const navigation = document.querySelector('.navigation');
+  
+  hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+  });
